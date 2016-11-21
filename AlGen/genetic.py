@@ -1,23 +1,26 @@
 import numpy as np
-populacja = np.array([[0,1,1,0,1],
-                      [0,1,0,0,0],
-                      [1,0,0,1,1],
-                      [1,1,0,0,0]])
+np.random.seed(0)
+N = 100
+#prostszy przykład z Goldberga
+#populacja = np.array([[0,1,1,0,1],
+#                      [0,1,0,0,0],
+#                      [1,0,0,1,1],
+#                      [1,1,0,0,0]])
+
+populacja = np.random.randint(2, size=((N, 5)))
 
 for generacja in range(10):
     # reprodukcja
     # print(populacja)
-    wartości = np.sum(populacja, axis=1)
+    wartości = np.sum(populacja, axis=1) + 1 # jesli populacja to same 0, bedzie 1/0
     # print(wartości)
     suma_wartosci = wartości.sum()
     print(wartości.max())
     ułamki = wartości / suma_wartosci
-    # print(ułamki)
-    # np.random.seed(0)
+    print(ułamki)
     dystrybuanta = np.cumsum(ułamki)
+    nowa_populacja = np.empty((N,5))
     # print(dystrybuanta)
-    N = 100
-    nowa_populacja = np.zeros((N,5), dtype=int)
     for i in range(N):
         x = np.random.random()
         x_przedzialow = x > dystrybuanta
