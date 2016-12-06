@@ -1,3 +1,6 @@
+""" Przepływ cieczy **nielepkiej** wokół nieskończonego cylindra
+z regulowaną cyrkulacją $\gamma$"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import argparse
