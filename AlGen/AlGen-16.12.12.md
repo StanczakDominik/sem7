@@ -72,8 +72,8 @@ reguły przez algorytm genetyczny, żeby powymieniał je i dobrał dobrał efekt
 Szukamy pewnego optymalnego rozwiązania $\vec{x} \in R^K$
 
 * $\vec{x}_{t+1} = \vec{x}_t + \vec{\eta}_t$
-* Z $([\vec{x}_t, \vec{x}_{t+1])$ wybieramy lepszego (tzw. strategia jeden plus jeden)
-* $G(\eta_t^{(1)}) = $ normal(mean=0, std = $sigma_{t}^{(1)}$)
+* Z $(\vec{x}_t, \vec{x}_{t+1})$ wybieramy lepszego (tzw. strategia jeden plus jeden)
+* $G(\eta_t^{(1)})$ = normal(mean=0, std = $\sigma_{t}^{(1)}$)
 
 ### Reguła 1/5 sukcesu
 Jeśli w L kolejnych generacjach liczba mutacji zakończonych sukcesem jest mniejsza niż L/5, należy zwiększyć siłę mutacji
@@ -91,7 +91,7 @@ Konkurują ze sobą tylko dzieci, więc mamy mieć $\lambda > \mu$. Metoda dużo
 * Różne sigma w każdą stronę
 * Jedna sigma we wszystkie strony + reguła anizotropii.
   * reguła jednej piątej zmienia moduł wektora sigma
-  * dodatkowa reguła obracająca wektor sigma o kąt: $\theta_{t+1} = \theta_t + $ gaussowska zmienna losowa
+  * dodatkowa reguła obracająca wektor sigma o kąt: $\theta_{t+1} = \theta_t$ + gaussowska zmienna losowa
 * czyli generalnie po prostu zrobić w biegunowych
 
 ### Operator krzyżowania dla strategii ewolucyjnej: trochę nasza doróbka
