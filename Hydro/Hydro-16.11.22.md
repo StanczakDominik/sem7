@@ -33,7 +33,7 @@ $$|\frac{2\vec{\Omega} \times \vec{u}}{(u \cdot \nabla) u}| \sim |\frac{2 \Omega
 Gdzie $R_o$ nazywamy liczbą Rossby'ego. Im mniejsza, tym istotniejsza siła Coriolisa.
 
 Umownie: przepływ jest **wielkoskalowy** gdy $R_o < 1$ (zależnie od skali U!)
-* dla Golfsztromu (prądu zatokowego) $ L \sim 100km$, $U \sim 1m/s$, $R_o \sim 0.07$  - wielkoskalowy.
+* dla Golfsztromu (prądu zatokowego) $L \sim 100 km$, $U \sim 1m/s$, $R_o \sim 0.07$  - wielkoskalowy.
 * Atmosfera $L \sim 1000km$, $U \sim 20m/s$, $R_o \sim 0.14$ - mniej wielkoskalowa niż Golfsztrom.
 
 ### Liczba Ekmana
@@ -69,7 +69,7 @@ Chcemy znaleźć $\frac{d\Gamma}{dt}$, $\Gamma = \Gamma(t)$,
 ## Wirowość absolutna
 widziana z układu inercjalnego.
 
-$\omega_a = \nabla \times (u + \Omega \times r} = \omega+ 2 \Omega
+$$\omega_a = \nabla \times (u + \Omega \times r) = \omega + 2 \Omega$$
 
 ### Cyrkulacja absolutna
 
